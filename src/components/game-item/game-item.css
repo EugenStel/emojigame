@@ -1,0 +1,85 @@
+.game__item {
+    font-size: var(--font-large);
+    text-align: center;
+}
+
+.game__points {
+    margin-bottom: 40px;
+}
+
+.game__item__info {
+    font-weight: 700;
+    font-size: var(--font-large);
+    color: var(--bg-buttons);
+}
+
+.game__hints {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.hints_button {
+    font-size: var(--font-button-large);
+    cursor: pointer;
+    padding: 0.3em .8em;
+    text-decoration: none;
+    background: var(--bg-buttons);
+    color: #FFF;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 5px var(--bg-buttons);
+    border: dashed 1px #FFF;
+}
+
+.hints_button:hover {
+    border: dotted 1px #FFF;
+}
+
+.hint__actors {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 800px) {
+    .game__item {
+        font-size: var(--font-medium);
+    }
+
+    .game__points {
+        margin-bottom: 30px;
+    }
+
+    .game__item__info {
+        font-size: var(--font-medium);
+    }
+
+    .hints_button {
+        font-size: var(--font-button-medium);
+    }
+
+    .hint__actors {
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .game__item {
+        font-size: var(--font-small);
+    }
+
+    .game__points {
+        margin-bottom: 30px;
+    }
+
+    .game__item__info {
+        font-size: var(--font-small);
+    }
+
+    .hints_button {
+        font-size: var(--font-button-small);
+    }
+
+    .hint__actors {
+        line-height: 1.5;
+    }
+}

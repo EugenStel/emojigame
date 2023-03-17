@@ -1,0 +1,43 @@
+.greeting {
+  margin-top: 20px;
+  font-size: var(--font-large);
+  text-align: center;
+}
+
+.greeting>p {
+  margin-bottom: 25px;
+}
+
+
+.greeting>button {
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+.greeting>button:hover {
+  cursor: pointer;
+}
+
+.img {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .greeting {
+    font-size: var(--font-medium);
+    line-height: 1.5;
+    margin-top: 5px;
+  }
+  .greeting>p {
+    margin-bottom: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 440px) {
+  .greeting {
+    font-size: var(--font-small);
+  }
+}
