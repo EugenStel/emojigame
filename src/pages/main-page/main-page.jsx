@@ -1,8 +1,8 @@
+import { useEffect, useState } from "react"
+import axios from "axios"
 import { Greeting } from "../../components/greeting/greeting"
 import { GameButton } from "../../components/game-button/game-button"
 import { GAME_BUTTONS_VALUES } from "../../constants/buttons"
-import { useEffect, useState } from "react"
-import axios from "axios"
 
 export const MainPage = () => {
     const [movies, setMovies] = useState()
